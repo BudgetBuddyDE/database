@@ -1,0 +1,46 @@
+{
+  "name": "@budgetbuddyde/database",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "homepage": "https://github.com/BudgetBuddyDE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BudgetBuddyDE/database.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BudgetBuddyDE/database/issues"
+  },
+  "scripts": {
+    "generate-auth-schema": "npx better-auth generate --config ./better-auth/auth.ts --output ./src/schemas/Auth.schema.ts",
+    "build": "rimraf dist && tsc --pretty",
+    "format": "prettier --write ./src/ --log-level silent",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "node .husky/install.mjs"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.34.1",
+    "drizzle-zod": "^0.5.1",
+    "typescript": "^5.6.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/pg": "^8.11.10",
+    "better-auth": "^0.4.0",
+    "drizzle-kit": "^0.25.0",
+    "husky": "^9.1.6",
+    "pg": "^8.13.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.1"
+  }
+}

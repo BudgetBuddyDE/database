@@ -1,0 +1,8 @@
+.git/
+src/
+node_modules/
+.prettierignore
+.prettierrc
+tsconfig.json
+better-auth/
+.husky/
