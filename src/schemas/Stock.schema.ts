@@ -5,7 +5,7 @@ import {z} from 'zod';
 import {BaseColumns, CreatedAtColumn, DescriptionColumn, OwnerColumn, Tables, UpdatedAtColumn} from './general';
 
 export const StockExchanges = pgTable(Tables.STOCK_EXCHANGES, {
-  symbol: varchar('symbol', {length: 5}).notNull(),
+  symbol: varchar('symbol', {length: 5}).primaryKey(),
   name: varchar('name', {length: 30}).notNull(),
   ...DescriptionColumn,
   ...CreatedAtColumn,
