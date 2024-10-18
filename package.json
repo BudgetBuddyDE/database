@@ -23,7 +23,9 @@
     "generate-auth-schema": "npx better-auth generate --config ./better-auth/auth.ts --output ./src/schemas/Auth.schema.ts",
     "build": "rimraf dist && tsc --pretty",
     "format": "prettier --write ./src/ --log-level silent",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
     "prepare": "node .husky/install.mjs"
   },
   "dependencies": {
@@ -35,12 +37,14 @@
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/pg": "^8.11.10",
+    "@vitest/ui": "^2.1.3",
     "better-auth": "^0.4.0",
     "drizzle-kit": "^0.25.0",
     "husky": "^9.1.6",
     "pg": "^8.13.0",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
-    "tsx": "^4.19.1"
+    "tsx": "^4.19.1",
+    "vitest": "^2.1.3"
   }
 }

@@ -3,6 +3,10 @@ import {serial, text, timestamp} from 'drizzle-orm/pg-core';
 import {user} from './Auth.schema';
 
 export enum Tables {
+  USERS = 'user',
+  ACCOUNTS = 'account',
+  SESSIONS = 'session',
+  VERIFICATIONS = 'verification',
   CATEGORIES = 'categories',
   PAYMENT_METHODS = 'payment_methods',
   TRANSACTIONS = 'transactions',
