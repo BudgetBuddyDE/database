@@ -26,7 +26,8 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
-    "prepare": "node .husky/install.mjs"
+    "prepare": "node .husky/install.mjs",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "drizzle-orm": "^0.34.1",

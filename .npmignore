@@ -6,3 +6,4 @@ node_modules/
 tsconfig.json
 better-auth/
 .husky/
+vitest.config.ts
