@@ -5,6 +5,7 @@ export const Accounts = account;
 export const Sessions = session;
 export const Verifications = verification;
 
+export * from './general';
 export * from './Category.schema';
 export * from './Newsletter.schema';
 export * from './PaymentMethod.schema';
