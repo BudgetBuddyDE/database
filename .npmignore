@@ -1,4 +1,5 @@
 .git/
+.github/
 src/
 node_modules/
 .prettierignore
@@ -6,4 +7,4 @@ node_modules/
 tsconfig.json
 better-auth/
 .husky/
-vitest.config.ts
+vitest.config*
